@@ -1,7 +1,5 @@
 # alex-portfolio
 
-# Horiseon Marketing
-
 ## Link to Live Website
 
 https://achris2.github.io/alex-portfolio/index.html
