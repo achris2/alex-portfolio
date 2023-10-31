@@ -30,7 +30,7 @@ I only really have one project live, with the others being place holders
 
 ## Screenshot
 
-![Screenshot of the application](https://myoctocat.com/assets/images/base-octocat.svg](https://achris2.github.io/alex-portfolio/assets/images/screenshot.png)
+![Screenshot of the application](https://achris2.github.io/alex-portfolio/assets/images/screenshot.png)
 
 ## Credits
 
