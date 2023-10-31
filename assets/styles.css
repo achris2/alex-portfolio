@@ -1,14 +1,21 @@
-: root {
-    font: Montserrat; 
-    background-color: #f1faee;
+* {
+    font-family: 'Montserrat'; 
+}
+
+h3, p {
+    color: #333333; 
+}
+
+h2 {
+    color:#022b3a;
 }
 
 
 body {
     font-family: 'Montserrat';
     background: white;
+    padding: 0px;
 }
-
 
 img {
     max-width: 100%;
@@ -18,50 +25,110 @@ img {
 .header-container{
     display: flex;
     flex-wrap: wrap;
-    margin: auto;
+    padding: 10px;
+    justify-content: space-between;
     align-items: center;
     background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);
-    justify-content: space-around;
     border-bottom: 3px solid #6a6969;
 }
 
 .main-header h1 {
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    color: #5b72a3;
-    
+    color: #022b3a;
 }
 
-
-.main-header .header-container {
-
-}
 .main-nav ul, li, a {
     margin: 3px;
     text-align: center;
     display: inline-block;
-    color: black;
-    border-radius: 20px;
-    border: 2px black;
+    border-radius: 5px;
     border-color: rgb(255, 7, 7);
+    justify-content: space-around;
+    color: #fff;
+	margin: 3px;
+}
+
+.main-nav a{
+    color: black;
+}
+
+.col1 {grid-area: col1;}
+.col2 {grid-area: col2;}
+.col3 {grid-area: col3;}
+.col4 {grid-area: col4;}
+.col5 {grid-area: col5;}
+.col6 {grid-area: col6;}
+.card1 {grid-area: card1;}
+.card2 {grid-area: card2;}
+.card3 {grid-area: card3;}
+.card4 {grid-area: card4;}
+.card5 {grid-area: card5;}
+
+.grid-container {
+    display: grid; 
+    grid-row: 1fr 2fr;
+    grid-template-areas:
+        'col1 col2'
+        'col3 col4'
+        'col5 col6';
+    gap: 20px; 
+}
+.col4{
+    display: grid;
+    grid-template-areas:
+    'card1 card1'
+    'card2 card3'
+    'card4 card5';
+    background-color: aqua;
+}
+
+.col1, .col3, .col5 {
+    display: grid;
     background-color: white;
-    padding: 2px;
-    justify-content: space-around;
+    justify-content: right;
+    align-items: baseline;
+    padding-right: 25px;
+    border-right: 3px solid #022b3a;
+    }
+
+
+.project {
+    display: flex;
+    display: inline;
+    position: relative; 
+    bottom: 10px;
+    float: left;
+    padding: 0px;
+    float: left;
+    background-color: lightblue;
 }
 
-.main-section {
-    justify-content: center;
-    background: rgba(255, 255, 255, 0.5);
+.card1 {
+    display: grid;
+    justify-content: flex-start;
+    background-image: url(https://images.ctfassets.net/lzny33ho1g45/5VGvMMdX169JCk60IJCRDA/e7c201f39c0ac708c11be3a12d08aa07/image10.png);
+    align-items: end;
+    min-width: 300px;
+    min-height: 300px;
+    background-color: white;
+    border: 3px solid lightblue;
 }
 
-.flex-container {
-    display: flex; 
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    padding: 30px;
-    margin: 0 auto;
+.card2, .card3, .card4, .card5 {
+    display: grid;
+    min-width: 50px;
+    min-height: 200px;
+    justify-content: flex-start;
+    align-items: end;
+    background-color: white;
+    border: 3px solid lightblue;
 }
 
 footer {
     background: rgba(255, 255, 255, 0.5);
 }
+
+@media (max-width: 400px) {
+    .flex-grid {
+      display: inline-block;
+    }
+  }
