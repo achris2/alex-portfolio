@@ -1,5 +1,7 @@
 # alex-portfolio
 
+## My first portfolio website
+
 ## Link to Live Website
 
 https://achris2.github.io/alex-portfolio/index.html
@@ -32,7 +34,7 @@ I only really have one project live, with the others being place holders
 
 ## Credits
 
-I've coded all of it myself.
+I've coded all of it myself. However, I have consulted the typical online resources (such as StackOverflow and general Googling) when needed. 
 
 ## License
 
