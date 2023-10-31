@@ -166,8 +166,9 @@ body, html {
     background-image: url(../assets/images/netflix.png);
 }
 
-.card4, .card5 {
+.card4, .card5{
     background-image: url(../assets/images/coming-soon.jpg);
+    background-size:cover;
 }
 
 footer {
