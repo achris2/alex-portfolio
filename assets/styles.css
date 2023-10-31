@@ -8,47 +8,71 @@ h3, p {
 
 h2 {
     color:#022b3a;
+    margin-top:0;
 }
 
-
-body {
+body, html {
     font-family: 'Montserrat';
     background: white;
-    padding: 0px;
-}
-
-img {
-    max-width: 100%;
-    height: auto;
+    margin-top:0;
+    margin: 0;
+    height: 100%;
 }
 
 .header-container{
     display: flex;
     flex-wrap: wrap;
     padding: 10px;
+    padding-bottom: -5px;
     justify-content: space-between;
     align-items: center;
-    background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);
+    background-image: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
     border-bottom: 3px solid #6a6969;
+    margin-top:0;
 }
 
+/* .hero{
+    display: flex;
+    background-image: url(../assets/images/hero-photo.jpg);
+    min-height: 400px;
+    min-width: none;
+    background-repeat: repeat;
+} */
+
+.hero {   
+    display: flex;
+    align-items: flex-end;
+    justify-content: right;
+    min-height: 20%;
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-image: url(../assets/images/hero-photo.jpg);
+ 
+  }
+
+.hero-text {
+    display: flex;
+    background-color: lightblue;
+    margin-bottom: 10px;
+    margin-right: 20px;
+} 
 .main-header h1 {
-    color: #022b3a;
+    color: white;
 }
 
 .main-nav ul, li, a {
-    margin: 3px;
+    display: flex;
     text-align: center;
     display: inline-block;
-    border-radius: 5px;
-    border-color: rgb(255, 7, 7);
     justify-content: space-around;
-    color: #fff;
-	margin: 3px;
+    padding: 3px;
 }
 
 .main-nav a{
-    color: black;
+    font-family: 'Montserrat';
+    font-weight: 600;
+    color: rgb(255, 255, 255);
+    text-decoration: dotted;
 }
 
 .col1 {grid-area: col1;}
@@ -64,21 +88,23 @@ img {
 .card5 {grid-area: card5;}
 
 .grid-container {
-    display: grid; 
-    grid-row: 1fr 2fr;
+    display:grid;
+    margin-top:20px;
+    margin-left:0px;
     grid-template-areas:
         'col1 col2'
         'col3 col4'
         'col5 col6';
     gap: 20px; 
 }
+
 .col4{
     display: grid;
+    gap: 10px;
     grid-template-areas:
     'card1 card1'
     'card2 card3'
     'card4 card5';
-    background-color: aqua;
 }
 
 .col1, .col3, .col5 {
@@ -95,20 +121,24 @@ img {
     display: flex;
     display: inline;
     position: relative; 
-    bottom: 10px;
-    float: left;
-    padding: 0px;
+    bottom: 15px;
+    padding: 5px;
     float: left;
     background-color: lightblue;
+}
+
+.project a {
+    text-align: left;
+    text-decoration: none;
 }
 
 .card1 {
     display: grid;
     justify-content: flex-start;
-    background-image: url(https://images.ctfassets.net/lzny33ho1g45/5VGvMMdX169JCk60IJCRDA/e7c201f39c0ac708c11be3a12d08aa07/image10.png);
+    background-image: url(../assets/images/horiseon.png);
     align-items: end;
     min-width: 300px;
-    min-height: 300px;
+    min-height: 400px;
     background-color: white;
     border: 3px solid lightblue;
 }
@@ -121,6 +151,14 @@ img {
     align-items: end;
     background-color: white;
     border: 3px solid lightblue;
+}
+
+.card2 {
+    background-image: url(../assets/images/zen-garden.png);
+}
+
+.card3 {
+    background-image: url(../assets/images/netflix.png);
 }
 
 footer {
