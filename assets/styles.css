@@ -1,0 +1,67 @@
+: root {
+    font: Montserrat; 
+    background-color: #f1faee;
+}
+
+
+body {
+    font-family: 'Montserrat';
+    background: white;
+}
+
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.header-container{
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    align-items: center;
+    background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);
+    justify-content: space-around;
+    border-bottom: 3px solid #6a6969;
+}
+
+.main-header h1 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #5b72a3;
+    
+}
+
+
+.main-header .header-container {
+
+}
+.main-nav ul, li, a {
+    margin: 3px;
+    text-align: center;
+    display: inline-block;
+    color: black;
+    border-radius: 20px;
+    border: 2px black;
+    border-color: rgb(255, 7, 7);
+    background-color: white;
+    padding: 2px;
+    justify-content: space-around;
+}
+
+.main-section {
+    justify-content: center;
+    background: rgba(255, 255, 255, 0.5);
+}
+
+.flex-container {
+    display: flex; 
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 30px;
+    margin: 0 auto;
+}
+
+footer {
+    background: rgba(255, 255, 255, 0.5);
+}
